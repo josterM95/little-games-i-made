@@ -1,0 +1,401 @@
+again, i will upload the code exactly as it is in visual studio
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsApplication1
+{
+    public partial class Form1 : Form
+    {
+        int tries=0,match=0;
+        char letra;
+        string palabra;
+        public Form1()
+
+        {
+            InitializeComponent();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            palabra = textBox1.Text;
+
+            if (palabra.Length == 1)
+            {
+                pictureBox8.Visible = true;
+            }
+            if (palabra.Length == 2)
+            {
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+            }
+            if (palabra.Length == 3)
+            {
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+            }
+            if (palabra.Length == 4)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+            }
+            if (palabra.Length == 5)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+            }
+            if (palabra.Length == 6)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+            }
+            if (palabra.Length == 7)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+            }
+            if (palabra.Length == 8)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+            }
+            if (palabra.Length == 9)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+            }
+            if (palabra.Length == 10)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+            }
+            if (palabra.Length == 11)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+            }
+            if (palabra.Length == 12)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                pictureBox19.Visible = true;
+            }
+            if (palabra.Length == 13)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                pictureBox19.Visible = true;
+                pictureBox20.Visible = true;
+            }
+            if (palabra.Length == 14)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                pictureBox19.Visible = true;
+                pictureBox20.Visible = true;
+                pictureBox21.Visible = true;
+            }
+            if (palabra.Length == 15)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                pictureBox19.Visible = true;
+                pictureBox20.Visible = true;
+                pictureBox21.Visible = true;
+                pictureBox22.Visible = true;
+            }
+            if (palabra.Length == 16)
+            {
+                pictureBox11.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                pictureBox19.Visible = true;
+                pictureBox20.Visible = true;
+                pictureBox21.Visible = true;
+                pictureBox22.Visible = true;
+                pictureBox23.Visible = true;
+            }
+            
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            palabra = textBox1.Text;
+            letra = textBox2.Text[0];
+            char[] arrpalabra = new char[palabra.Length];
+            arrpalabra = palabra.ToCharArray();
+            
+            for (int i = 0; i < arrpalabra.Length; i++)
+            {
+                if (letra == arrpalabra[i])
+                {
+                    if (i == 0)
+                    {
+                        label2.Visible = true;
+                        label2.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 1)
+                    {
+                        label3.Visible = true;
+                        label3.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 2)
+                    {
+                        label4.Visible = true;
+                        label4.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 3)
+                    {
+                        label5.Visible = true;
+                        label5.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 4)
+                    {
+                        label6.Visible = true;
+                        label6.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 5)
+                    {
+                        label7.Visible = true;
+                        label7.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 6)
+                    {
+                        label8.Visible = true;
+                        label8.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 7)
+                    {
+                        label9.Visible = true;
+                        label9.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 8)
+                    {
+                        label10.Visible = true;
+                        label10.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 9)
+                    {
+                        label11.Visible = true;
+                        label11.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 10)
+                    {
+                        label12.Visible = true;
+                        label12.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 11)
+                    {
+                        label13.Visible = true;
+                        label13.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 12)
+                    {
+                        label14.Visible = true;
+                        label14.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 13)
+                    {
+                        label15.Visible = true;
+                        label15.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 14)
+                    {
+                        label16.Visible = true;
+                        label16.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+                    if (i == 15)
+                    {
+                        label17.Visible = true;
+                        label17.Text = Convert.ToString(arrpalabra[i]);
+                        match++;
+                    }
+
+                }
+                
+            }
+            if (match == 0)
+            {
+                tries++;
+                match = 0;
+            }
+            else
+            {
+                match = 0;
+            }
+                
+            if (tries == 1)
+            {
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+
+
+            }
+            if (tries == 2)
+            {
+                pictureBox3.Visible = true;
+                pictureBox2.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+            }
+            if (tries == 3)
+            {
+                pictureBox4.Visible = true;
+                pictureBox3.Visible = false;
+                pictureBox2.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+            }
+            if (tries == 4)
+            {
+                pictureBox5.Visible = true;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox2.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox7.Visible = false;
+            }
+            if (tries == 5)
+            {
+                pictureBox6.Visible = true;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox2.Visible = false;
+                pictureBox7.Visible = false;
+            }
+            if (tries >= 6)
+            {
+                pictureBox7.Visible = true;
+                pictureBox3.Visible = false;
+                pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
+                pictureBox6.Visible = false;
+                pictureBox2.Visible = false;
+                MessageBox.Show("has sido ahorcado");
+            }
+            textBox2.Clear();
+            textBox2.Focus();
+        }
+    }
+}
